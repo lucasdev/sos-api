@@ -18,8 +18,8 @@
 | GET    | marcas/{id}               | – Obter uma marca por ID                  |
 | GET    | marcas/{id}/patrimônios   | – Obter todos os patrimônios de uma marca |
 | POST   | marcas                    | – Inserir uma nova marca                  |
-| PUT    | marca/{id}                | – Alterar os dados de uma marca           |
-| DELETE | marca/{id}                | – Excluir uma marca                       |
+| PUT    | marcas/{id}               | – Alterar os dados de uma marca           |
+| DELETE | marcas/{id}               | – Excluir uma marca                       |
 
 ### Como instalar e executar o projeto
 
@@ -34,3 +34,7 @@ cd sos-api
 mvn clean install
 mvn spring-boot:run
 ```
+
+## Url de acesso
+
+http://localhost:8081/
