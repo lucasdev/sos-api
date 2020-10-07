@@ -1,0 +1,32 @@
+CREATE DATABASE sosdb DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE sosdb.tb_marca (
+	id INT auto_increment NOT NULL,
+	nome varchar(150) NOT null,
+	primary key (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci;
+
+CREATE TABLE sosdb.tb_patrimonio (
+	id INT auto_increment NOT NULL,
+	nome varchar(150) NOT NULL,
+	descricao VARCHAR(150) NULL,
+	nu_tombo varchar(100) NULL,
+	marca_id INT NOT null,
+	primary key (id),
+	FOREIGN KEY (marca_id) REFERENCES tb_marca(id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci;
+
+CREATE TABLE sosdb.tb_arquivo (
+	id INT auto_increment NOT NULL,
+	path varchar(250) NOT null,
+	primary key (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci;
