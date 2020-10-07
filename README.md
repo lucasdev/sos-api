@@ -29,7 +29,7 @@
 4. Execute o servidor tomcat embedded.
 
 ```console
-git clone https://10.1.26.109/Lucas/sos-api.git
+git clone git@github.com:lucasdev/sos-api.git
 cd sos-api
 mvn clean install
 mvn spring-boot:run
